@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #3498db;
+  --secondary: #f1c40f;
+  --accent: #2ecc71;
+  --success: #2ecc71;
+  --error: #e74c3c;
+  --warning: #f1c40f;
+  --info: #3498db;
+}
+
+body {
+  @apply bg-white;
+  @apply overflow-x-hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.container {
+  @apply mx-auto;
+  @apply px-4;
+  @apply py-6;
+  @apply max-w-screen-lg;
+}
